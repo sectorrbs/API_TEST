@@ -1,0 +1,9 @@
+.nav {
+    &__link {
+        @include transition;
+        @include font(13px, null, 15px, $color-white, null);
+        display: block;
+        padding: 10px 10px 10px 45px;
+        text-decoration: none;
+    }
+}

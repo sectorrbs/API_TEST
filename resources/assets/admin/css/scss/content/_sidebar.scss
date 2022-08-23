@@ -1,0 +1,15 @@
+.sidebar {
+    @include position(fixed, 0, 50px, null, null);
+    @include size(250px, 100%);
+    flex-direction: column;
+    @include flex(stretch);
+    background: $color;
+
+    &__name {
+        @include font(20px, 700, 25px, $color-white, null);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
